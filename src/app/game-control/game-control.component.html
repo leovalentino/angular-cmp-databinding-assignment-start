@@ -1,0 +1,9 @@
+<div class="row">
+  <button class="btn btn-primary" (click)="iniciarJogo()">Start</button>
+  <button class="btn btn-danger" (click)="pararJogo()">Stop</button>
+</div>
+
+<div class="row">
+  <app-odd *ngFor="let impar of vetorImpares" [numero]="impar"></app-odd>
+  <app-even *ngFor="let par of vetorPares" [numero]="par"></app-even>
+</div>
